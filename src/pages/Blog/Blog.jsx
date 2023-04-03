@@ -1,7 +1,11 @@
 import React from "react";
 import "./Blog.scss";
 function Blog() {
-  return <div>Blog</div>;
+  return <section className="blog">
+    <div className="container">
+      
+    </div>
+  </section>;
 }
 
 export default Blog;
