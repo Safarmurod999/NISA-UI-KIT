@@ -1,7 +1,17 @@
 import React from "react";
-import "./aboutCarousel.scss";
-function aboutCarousel() {
-  return <div>aboutCarousel</div>;
+import "./AboutCarousel.scss";
+
+function AboutCarousel() {
+  return (
+    <>
+        <section className="about__header">
+          <button>MEET OUR COMPANY</button>
+          <h1>
+            We’re a people focused <br /> organisation
+          </h1>
+        </section>
+    </>
+  );
 }
 
-export default aboutCarousel;
+export default AboutCarousel;
