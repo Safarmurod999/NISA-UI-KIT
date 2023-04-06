@@ -1,2 +1,76 @@
 // about
-
+.carusel {
+  text-align: center;
+  padding: 7rem 0;
+  margin-bottom: 1rem;
+  button {
+    background: #f9f5f2;
+    padding: 0.7rem 1.5rem;
+  }
+  h1 {
+    margin-bottom: 3.5rem;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.9rem;
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+    &-content {
+      background: #ffffff;
+      box-shadow: 0px 0px 11px rgba(108, 109, 112, 0.2);
+      border-radius: 1rem;
+      position: relative;
+      &_top {
+        position: absolute;
+        background: #ff3c78;
+        padding: 1.5rem 2.75rem 2.75rem 1.125rem;
+        border-radius: 1rem 0 100%;
+      }
+      h3 {
+        margin: 5.4rem 6.3rem 0.25rem;
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      img {
+        margin-bottom: 0.5rem;
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.625rem;
+      }
+      span {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+        line-height: 1.625rem;
+        margin-bottom: 1.625rem;
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    button {
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+}
