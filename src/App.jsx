@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Blog from "./pages/Blog/Blog";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
+import Pricing from "./pages/Pricing/Pricing";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="pricing" element={<Pricing />} />
           <Route path="blog" element={<Blog />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
