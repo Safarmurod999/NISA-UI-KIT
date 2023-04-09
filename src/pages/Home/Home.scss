@@ -316,3 +316,17 @@
     }
   }
 }
+.partners {
+  position: relative;
+  padding: 62px 0 112px;
+  &::before {
+    width: 100%;
+    // position: absolute;
+    z-index: 2;
+    // top: 0;
+    // left: 0;
+    // content: "";
+    background-image: url("../../assets/Home/back-lines.svg");
+    background-position: center;
+  }
+}

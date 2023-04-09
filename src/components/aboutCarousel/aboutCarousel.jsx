@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutCarousel.scss";
+import "./aboutCarousel.scss";
 
 function AboutCarousel() {
   return (

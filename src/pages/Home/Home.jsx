@@ -12,7 +12,9 @@ import layer from "../../assets/Home/layer-btn.svg";
 import play from "../../assets/Home/play-btn.svg";
 import designers from "../../assets/Home/designers.png"
 import Pinkbtn from "../../components/Pinkbtn/pinkBtn";
-function Home() {
+import partners from "../../assets/Home/partners-bg.png"
+// import data from "./data";
+function Home({data}) {
   return (
     <>
       <section className="home">
@@ -142,6 +144,25 @@ function Home() {
           </div>
           <div className="designers__right">
             <img src={designers} alt="designers" />
+          </div>
+        </div>
+      </section>
+      <section className="partners">
+        <div className="container">
+          <div className="partners__title">
+          Put the spotlight on the main features
+          </div>
+          <div className="partners__img">
+            <img src={partners} alt="partners" />
+          </div>
+          <div className="partners__list">
+            {
+              data.map((el)=>{
+                return (
+                  <img key={el.id} src={el.img} alt="asdad" />
+                )
+              })
+            }
           </div>
         </div>
       </section>

@@ -1,0 +1,22 @@
+export const logoArray=[
+    {
+        id:1,
+        img:"./src/assets/Home/pingdom-logo.svg",
+    },
+    {
+        id:2,
+        img:"../../assets/Home/pendo-logo.svg",
+    },
+    {
+        id:3,
+        img:"../../assets/Home/sendgrid-logo.svg",
+    },
+    {
+        id:4,
+        img:"../../assets/Home/lattice-logo.svg",
+    },
+    {
+        id:5,
+        img:"../../assets/Home/gitlab-logo.svg",
+    }
+]
