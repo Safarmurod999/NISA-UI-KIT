@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import AboutCarousel from "../../components/AboutCarousel/AboutCarousel";
+import AboutCarousel from "../../components/aboutCarousel/aboutCarousel";
 import Navbar from "../../components/Navbar/Navbar";
 import data from "./data";
 import AboutComponent from "./AboutComponent";

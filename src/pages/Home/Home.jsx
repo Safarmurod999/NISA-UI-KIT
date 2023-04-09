@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.scss";
-import arrowright from "../../assets/Home/arrow-right.svg";
-import homeright from "../../assets/Home/home-right.png";
-import discover from "../../assets/Home/discover.png";
-import Bluebtn from "../../components/Bluebtn/blueBtn";
+// import arrowright from "../../assets/Home/arrow-right.svg";
+// import homeright from "../../assets/Home/home-right.png";
+// import discover from "../../assets/Home/discover.png";
+// import Bluebtn from "../../components/Bluebtn/blueBtn";
 import user from "../../assets/Home/user.png";
 import twitch from "../../assets/Home/twitch.svg";
 import freedom from "../../assets/Home/freedom.png";
@@ -29,17 +29,17 @@ function Home({data}) {
             {/* <button className="pinkBtn">
               Get Started <img src={arrowright} alt="arrow" />
             </button> */}
-            <Pinkbtn data={"Get Started"} src={arrowright}/>
+            {/* <Pinkbtn data={"Get Started"} src={arrowright}/> */}
           </div>
           <div className="home__right">
-            <img src={homeright} alt="homeright" />
+            <img src="" alt="homeright" />
           </div>
         </div>
       </section>
       <section className="discover">
         <div className="container">
           <div className="discover__left">
-            <img src={discover} alt="discover" />
+            <img src="" alt="discover" />
           </div>
           <div className="discover__right">
             <div className="discover__right__title">
@@ -50,7 +50,7 @@ function Home({data}) {
               tincidunt finibus tortor. Donec lobortis augue sed ante molestie,
               vitae maximus nunc semper.
             </p>
-            <Bluebtn data={"Explore Section"} />
+            {/* <Bluebtn data={"Explore Section"} /> */}
             <h6>Add some additional details about your product</h6>
             <div className="user-div">
               <img src={user} alt="user" />
@@ -74,7 +74,7 @@ function Home({data}) {
               turpis leo netus consequat phasellus. Netus ipsum sed faucibus
               enim.
             </p>
-            <Bluebtn data={"Explore Section"} />
+            {/* <Bluebtn data={"Explore Section"} /> */}
           </div>
           <div className="features__right">
             <div className="features__card">
@@ -114,8 +114,8 @@ function Home({data}) {
               consectetur egestas mauris adipiscing dui.{" "}
             </p>
             <div className="freedom__right__btn">
-              <Bluebtn data={"Explore Section"} />
-              <Pinkbtn data={"Get Started"} src={play} />
+              {/* <Bluebtn data={"Explore Section"} />
+              <Pinkbtn data={"Get Started"} src={play} /> */}
             </div>
             <div className="freedom__right__cards">
               <div className="card">
@@ -140,7 +140,7 @@ function Home({data}) {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
               consectetur egestas mauris adipiscing dui.{" "}
             </p>
-            <Bluebtn data={"Explore Section"}/>
+            {/* <Bluebtn data={"Explore Section"}/> */}
           </div>
           <div className="designers__right">
             <img src={designers} alt="designers" />

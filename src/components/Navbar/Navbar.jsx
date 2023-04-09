@@ -1,7 +1,9 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import logo from "../../assets/Navbar/logo.svg"
-import "./Navbar.scss";
+import logo from "../../assets/Navbar/logo.svg";
+
+
+import "./navBar.scss";
 function Navbar() {
   return <>
   <nav className="navbar">
