@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.scss";
-// import arrowright from "../../assets/Home/arrow-right.svg";
-// import homeright from "../../assets/Home/home-right.png";
-// import discover from "../../assets/Home/discover.png";
-// import Bluebtn from "../../components/Bluebtn/blueBtn";
+import arrowright from "../../assets/Home/arrow-right.svg";
+import homeright from "../../assets/Home/home-right.png";
+import discover from "../../assets/Home/discover.png";
+import Bluebtn from "../../components/blueBtn/BlueBtn";
 import user from "../../assets/Home/user.png";
 import twitch from "../../assets/Home/twitch.svg";
 import freedom from "../../assets/Home/freedom.png";
@@ -11,7 +11,7 @@ import message from "../../assets/Home/message-btn.svg";
 import layer from "../../assets/Home/layer-btn.svg";
 import play from "../../assets/Home/play-btn.svg";
 import designers from "../../assets/Home/designers.png"
-import Pinkbtn from "../../components/Pinkbtn/pinkBtn";
+import Pinkbtn from "../../components/pinkBtn/PinkBtn";
 import partners from "../../assets/Home/partners-bg.png"
 // import data from "./data";
 function Home({data}) {

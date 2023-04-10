@@ -1,9 +1,9 @@
 import React from "react";
-import "./Bluebtn.scss";
-function Bluebtn({data}) {
+import "./BlueBtn.scss";
+function BlueBtn({data}) {
   return <button className="blueBtn">
     {data}
   </button>;
 }
 
-export default Bluebtn;
+export default BlueBtn;
