@@ -1,7 +1,15 @@
 import React from "react";
-import "./Pricing.scss";
+
 function Pricing() {
-  return <div>Pricing</div>;
+  return (
+    <>
+      <section className="pricing">
+        <div className="container">
+         
+        </div>
+      </section>
+    </>
+  )
 }
 
 export default Pricing;
