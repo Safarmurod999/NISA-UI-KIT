@@ -1,0 +1,81 @@
+.footer {
+  padding: 80px 0 48px;
+  background-color: black;
+
+  &__description {
+    max-width: 37%;
+  }
+
+
+  &__social{
+    display: flex;
+    gap: 20px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 102px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #ffffff;
+  }
+
+  &__paragrft {
+    margin-bottom: 24px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 63%;
+    margin: 0;
+    padding: 0;
+
+    li strong {
+      display: block;
+      margin-bottom: 19px;
+      color: white;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      color: #ffffff;
+    }
+
+    &-item {
+      padding: 0;
+    }
+
+    li ul li a {
+      display: block;
+      padding-bottom: 19px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      transition: .4s;
+
+      &:hover{
+        color: rgb(199, 158, 107);
+      }
+    }
+  }
+}

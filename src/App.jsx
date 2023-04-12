@@ -7,6 +7,7 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Pricing from "./pages/Pricing/Pricing";
 import { logoArray } from "./pages/Home/data";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
