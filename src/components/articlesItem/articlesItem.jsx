@@ -1,7 +1,10 @@
 import React from "react";
 import "./articlesItem.scss";
 function articlesItem() {
-  return <div>articlesItem</div>;
+  return (
+  <div>
+    
+  </div>);
 }
 
 export default articlesItem;

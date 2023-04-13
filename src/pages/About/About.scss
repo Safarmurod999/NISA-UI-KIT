@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.container{
+.container {
   width: 1065px;
   padding: 0 12px;
   margin: 0 auto;
@@ -30,6 +30,7 @@ h1 {
   text-align: center;
   background: #f9f5f2;
   padding: 3rem 0;
+  margin-top: 5rem;
   button {
     padding: 0.7rem 1rem;
     background: #ffdec6;
@@ -61,17 +62,17 @@ h1 {
       font-size: 4rem;
       line-height: 5.3rem;
       margin-bottom: 0.25rem;
-      span{
+      span {
         font-weight: bold;
       }
-      .pink{
-        color: #FF3C78;
+      .pink {
+        color: #ff3c78;
       }
-      .yellow{
-        color: #F0B143;
+      .yellow {
+        color: #f0b143;
       }
-      .blue{
-        color: #2241CF;
+      .blue {
+        color: #2241cf;
       }
     }
     p {
@@ -82,9 +83,54 @@ h1 {
   }
 }
 
-.ourTeam{
+.ourTeam {
   text-align: center;
-  background-color: #1E1E1E;
-  color: #fff;
-  
+  background-color: black;
+  color: #ffffff;
+  padding-top: 3.5rem;
+  button {
+    margin-bottom: 2rem;
+  }
+  h1 {
+    margin-bottom: 5.6rem;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    &_item {
+      &-img {
+        position: relative;
+        margin-bottom: 1rem;
+        button {
+          position: absolute;
+          left: 24px;
+          bottom: 24px;
+          color: #ffffff;
+          padding: 4px 15px;
+          margin: 0;
+        }
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 2rem;
+      }
+      &-icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 20px;
+        margin-bottom: 4.5rem;
+      }
+    }
+  }
 }

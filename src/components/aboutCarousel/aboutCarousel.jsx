@@ -3,22 +3,9 @@ import "./AboutCarousel.scss";
 import just from "../../assets/About/tinified/qoshtirnoq.svg";
 import left from "../../assets/About/tinified/arrow-left.svg";
 import right from "../../assets/About/tinified/arrow-right.svg";
+import data from "./data";
 
 function AboutCarousel() {
-  const data = [
-    {
-      img: "../../assets/About/tinified/Profil1.png",
-      id: 1,
-    },
-    {
-      img: "../../assets/About/tinified/Profil2.png",
-      id: 2,
-    },
-    {
-      img: "../../assets/About/tinified/Profil3.png",
-      id: 3,
-    },
-  ];
 
   const sliderLeft = ()=>{
     
@@ -33,20 +20,21 @@ function AboutCarousel() {
           <button>Testimonial </button>
           <h1>What our client says</h1>
           <div className="carusel__wrap">
-            {data.map((data, index) => {
+            {data.map((data) => {
+              const {id,img}=data;
               return (
-                <div key={index} className="carusel__wrap-content">
+                <div key={id} className="carusel__wrap-content">
                   <div className="carusel__wrap-content_top">
                     <img src={just} alt="" />
                   </div>
-                  <h3>{data.id}.TITLE HERE</h3>
+                  <h3>{id}.TITLE HERE</h3>
                   <p>
                     Lorem ipsum dolor sit amet,
                     <br />
                     consectetur adipiscing elit. Pretium <br />
                     consectetur egestas.
                   </p>
-                  <img src={data.img} alt="" />
+                  <img src={img} alt="asd" />
                   <h4>Alex Mex</h4>
                   <span>CEO/DIRECTOR</span>
                 </div>
