@@ -1,0 +1,17 @@
+.blueBtn {
+  padding: 12px 24px;
+  background: #2241cf;
+  border: 1px solid #2241cf;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #ffffff;
+  transition: .3s;
+  cursor: pointer;
+  &:hover{
+    background-color: #ffffff;
+    color: #2241cf;
+  }
+}

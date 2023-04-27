@@ -1,22 +1,22 @@
 export const logoArray=[
     {
         id:1,
-        img:"/src/assets/Home/pingdom-logo-svg-150px.png",
+        img:"/src/assets/Home/pingdom-logo-svg-150px.svg",
     },
     {
         id:2,
-        img:"/src/assets/Home/pendo-logo-svg-150px.png",
+        img:"/src/assets/Home/pendo-logo-svg-150px.svg",
     },
     {
         id:3,
-        img:"/src/assets/Home/sendgrid-logo-svg-150px.png",
+        img:"/src/assets/Home/sendgrid-logo-svg-150px.svg",
     },
     {
         id:4,
-        img:"/src/assets/Home/lattice-logo-svg-150px.png",
+        img:"/src/assets/Home/lattice-logo-svg-150px.svg",
     },
     {
         id:5,
-        img:"/src/assets/Home/gitlab-logo-svg-150px.png",
+        img:"/src/assets/Home/gitlab-logo-svg-150px.svg",
     }
 ]
