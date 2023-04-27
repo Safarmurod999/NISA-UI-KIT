@@ -26,20 +26,18 @@ function Home({data}) {
               Nisa is constantly improving to move forward through dashboard,
               statistics, data and verify and superior human resources.
             </p>
-            {/* <button className="pinkBtn">
-              Get Started <img src={arrowright} alt="arrow" />
-            </button> */}
-            {/* <Pinkbtn data={"Get Started"} src={arrowright}/> */}
+         
+            <Pinkbtn data={"Get Started"} src={arrowright}/>
           </div>
           <div className="home__right">
-            <img src="" alt="homeright" />
+            <img src={homeright} alt="homeright" />
           </div>
         </div>
       </section>
       <section className="discover">
         <div className="container">
           <div className="discover__left">
-            <img src="" alt="discover" />
+            <img src={discover} alt="discover" />
           </div>
           <div className="discover__right">
             <div className="discover__right__title">
@@ -50,7 +48,7 @@ function Home({data}) {
               tincidunt finibus tortor. Donec lobortis augue sed ante molestie,
               vitae maximus nunc semper.
             </p>
-            {/* <Bluebtn data={"Explore Section"} /> */}
+            <Bluebtn data={"Explore Section"} />
             <h6>Add some additional details about your product</h6>
             <div className="user-div">
               <img src={user} alt="user" />
@@ -74,7 +72,7 @@ function Home({data}) {
               turpis leo netus consequat phasellus. Netus ipsum sed faucibus
               enim.
             </p>
-            {/* <Bluebtn data={"Explore Section"} /> */}
+            <Bluebtn data={"Explore Section"} />
           </div>
           <div className="features__right">
             <div className="features__card">
@@ -114,8 +112,8 @@ function Home({data}) {
               consectetur egestas mauris adipiscing dui.{" "}
             </p>
             <div className="freedom__right__btn">
-              {/* <Bluebtn data={"Explore Section"} />
-              <Pinkbtn data={"Get Started"} src={play} /> */}
+              <Bluebtn data={"Explore Section"} />
+              <Pinkbtn data={"Get Started"} src={play} />
             </div>
             <div className="freedom__right__cards">
               <div className="card">
@@ -140,7 +138,7 @@ function Home({data}) {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
               consectetur egestas mauris adipiscing dui.{" "}
             </p>
-            {/* <Bluebtn data={"Explore Section"}/> */}
+            <Bluebtn data={"Explore Section"}/>
           </div>
           <div className="designers__right">
             <img src={designers} alt="designers" />
