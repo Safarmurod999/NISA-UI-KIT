@@ -1,7 +1,9 @@
 import React from "react";
-import "./articlesSection.scss";
-function articlesSection() {
-  return <div>articlesSection</div>;
+import "./ArticlesSection.scss";
+import {articles} from "../ArticlesItem/articleData"; "../ArticlesItem/articleData";
+
+function ArticlesSection() {
+  return <div>ArticlesSection</div>;
 }
 
-export default articlesSection;
+export default ArticlesSection;

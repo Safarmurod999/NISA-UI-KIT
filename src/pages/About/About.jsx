@@ -2,15 +2,14 @@ import React from "react";
 import "./About.scss";
 import AboutCarousel from "../../components/AboutCarousel/AboutCarousel";
 import Navbar from "../../components/Navbar/Navbar";
-
 import fokus1 from "../../assets/About/tinified/fokus1.png";
 import fokus2 from "../../assets/About/tinified/fokus2.png";
 import fokus3 from "../../assets/About/tinified/fokus3.png";
 import fokus4 from "../../assets/About/tinified/fokus4.png";
 import fokus5 from "../../assets/About/tinified/fokus5.png";
 import Bluebtn from "../../components/blueBtn/blueBtn";
-import rasm from "../../assets/About/tinified/ourTeam1.png"
 import { ourTeam } from "./data";"./data";
+
 function About() {
   return (
     <>
@@ -66,7 +65,7 @@ function About() {
               return (
                 <div key={index} className="ourTeam__grid_item">
                   <div className="ourTeam__grid_item-img">
-                    <img src={rasm} alt="ourTeam" />
+                    <img src={data.img} alt="ourTeam" />
                     <button style={{ backgroundColor: data.color }}>{data.btn}</button>
                   </div>
                   <h3>{data.title}</h3>

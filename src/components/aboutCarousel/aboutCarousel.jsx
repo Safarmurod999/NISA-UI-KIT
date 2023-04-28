@@ -34,7 +34,7 @@ function AboutCarousel() {
                     consectetur adipiscing elit. Pretium <br />
                     consectetur egestas.
                   </p>
-                  <img src={img} alt="asd" />
+                  <img className="image" src={img} alt="asd" />
                   <h4>Alex Mex</h4>
                   <span>CEO/DIRECTOR</span>
                 </div>
