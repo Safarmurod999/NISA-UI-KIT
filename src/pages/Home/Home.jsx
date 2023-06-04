@@ -3,7 +3,7 @@ import "./Home.scss";
 import arrowright from "../../assets/Home/arrow-right.svg";
 import homeright from "../../assets/Home/home-right.png";
 import discover from "../../assets/Home/discover.png";
-import Bluebtn from "../../components/blueBtn/BlueBtn";
+import Bluebtn from "../../components/BlueBtn/BlueBtn";
 import user from "../../assets/Home/user.png";
 import twitch from "../../assets/Home/twitch.svg";
 import freedom from "../../assets/Home/freedom.png";
@@ -11,14 +11,14 @@ import message from "../../assets/Home/message-btn.svg";
 import layer from "../../assets/Home/layer-btn.svg";
 import play from "../../assets/Home/play-btn.svg";
 import designers from "../../assets/Home/designers.png"
-import Pinkbtn from "../../components/pinkBtn/PinkBtn";
-import partners from "../../assets/Home/partners-bg.png"
-// import data from "./data";
+import Pinkbtn from "../../components/PinkBtn/PinkBtn";
+import partners from "../../assets/Home/partners-bg.png";
+import discover_tablet from "../../assets/Home/discover-tablet.png";
 function Home({data}) {
   return (
     <>
       <section className="home">
-        <div className="container">
+        <div className="container container-flex">
           <div className="home__left">
             <h1>Nisa boosts team product excellence</h1>
 
@@ -33,11 +33,12 @@ function Home({data}) {
             <img src={homeright} alt="homeright" />
           </div>
         </div>
-      </section>
+      </section>  
       <section className="discover">
-        <div className="container">
+        <div className="container container-flex">
           <div className="discover__left">
             <img src={discover} alt="discover" />
+            <img src={discover_tablet} alt="discover" className="discover__left__tablet" />
           </div>
           <div className="discover__right">
             <div className="discover__right__title">
@@ -61,7 +62,7 @@ function Home({data}) {
         </div>
       </section>
       <section className="features">
-        <div className="container">
+        <div className="container container-flex">
           <div className="features__left">
             <div className="features__left__title">
               Share the features that help your customers
@@ -82,23 +83,23 @@ function Home({data}) {
             </div>
             <div className="features__card">
               <img src={twitch} alt="twitch" />
-              <div>Blog</div>
+              <div>Documentation</div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </div>
             <div className="features__card">
               <img src={twitch} alt="twitch" />
-              <div>Blog</div>
+              <div>Integrations</div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </div>
             <div className="features__card">
               <img src={twitch} alt="twitch" />
-              <div>Blog</div>
+              <div>Customers</div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </div>
           </div>
         </div>
       </section>
-      <section className="freedom">
+      {/* <section className="freedom">
         <div className="container">
           <div className="freedom__left">
             <img src={freedom} alt="freedom" />
@@ -163,7 +164,7 @@ function Home({data}) {
             }
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

@@ -1,3 +1,9 @@
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
 .home {
   padding-top: 174px;
   padding-bottom: 76px;
@@ -9,6 +15,7 @@
     justify-content: space-between;
   }
   &__left {
+    width: 50%;
     padding-top: 40px;
     color: #fff;
     font-style: normal;
@@ -29,6 +36,7 @@
     }
   }
   &__right {
+    width: 50%;
     position: relative;
     display: flex;
     align-items: center;
@@ -37,7 +45,11 @@
       position: absolute;
       bottom: -35px;
       right: 0;
-      content: url("../../assets/Home/home-right-div.png");
+      width: 246px;
+      height: 267px;
+      content: "";
+      background-image: url("../../assets/Home/home-right-div.png");
+      background-size: 100% 100%;
     }
     img {
       width: 100%;
@@ -47,18 +59,15 @@
 .discover {
   padding: 89px 0 69px;
   background-color: #f9f5f2;
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-  }
+
   &__left {
-    width: auto;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    &__tablet {
+      display: none;
+    }
     &::after {
       position: absolute;
       left: -76px;
@@ -84,7 +93,7 @@
       line-height: 47px;
       margin-bottom: 16px;
     }
-    p {
+    &__text {
       max-width: 494px;
       font-weight: 400;
       font-size: 16px;
@@ -120,14 +129,8 @@
 }
 .features {
   padding: 112px 0;
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-  }
   &__left {
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -179,6 +182,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
+      text-align: center;
     }
   }
 }
@@ -320,7 +324,7 @@
   position: relative;
   z-index: 2;
   padding: 62px 0 112px;
-  background-image: linear-gradient(to bottom,#000 50% ,#fff 50%);
+  background-image: linear-gradient(to bottom, #000 50%, #fff 50%);
   &__title {
     position: relative;
     z-index: 2;
@@ -336,16 +340,16 @@
     color: #ffffff;
     margin-bottom: 75px;
   }
-  &__img{
+  &__img {
     position: relative;
     margin: 0 auto;
     margin-bottom: 65px;
     z-index: 2;
-    img{
+    img {
       width: 100%;
     }
   }
-  &__list{
+  &__list {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -362,5 +366,220 @@
     content: url("/src/assets/Home/back-lines.svg");
     // background-image: url("/src/assets/Home/back-lines.svg");
     background-position: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .home {
+    padding-top: 100px;
+    &__left {
+      padding-top: 0;
+      padding-right: 20px;
+      h1 {
+        max-width: 295px;
+        font-size: 48px;
+        line-height: 64px;
+        margin-top: 0;
+      }
+      p {
+        max-width: 323px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .discover {
+    &__left {
+      width: 400px;
+    }
+    &__right {
+      padding-left: 20px;
+      &__title {
+        max-width: 340px;
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 16px;
+      }
+      &__text {
+        max-width: 400px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 16px;
+      }
+      h6 {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 16px 0;
+      }
+      .user-div-text {
+        p {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .features {
+    &__left {
+      &__title {
+        font-size: 36px;
+        line-height: 50px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    &__card {
+      gap: 10px;
+      div {
+        font-size: 16px;
+        line-height: 26px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  .discover {
+    &__left {
+      max-width: 377px;
+      img,
+      &::after,
+      &::before {
+        display: none;
+      }
+      &__tablet {
+        display: flex !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 782px) {
+  .home {
+    padding-top: 80px;
+    .container {
+      // flex-direction: column;
+      gap: 30px;
+    }
+    &__left {
+      h1,
+      p {
+        max-width: 100%;
+      }
+    }
+    &__left,
+    &__right {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 678px) {
+  .home,
+  .discover,
+  .features {
+    padding-top: 64px;
+    .container {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+  .discover {
+    &__left,
+    &__right,
+    &__left__tablet,
+    &__right__title,
+    &__right__text {
+      max-width: 100%;
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+  .features {
+    &__left,
+    &__right {
+      width: 100%;
+    }
+    &__left {
+      margin-top: 0;
+      &__title,
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .home {
+    &__left {
+      padding-top: 0;
+      padding-right: 20px;
+      h1 {
+        font-size: 32px;
+        line-height: 44px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    &__right {
+      &::after {
+        right: 20px;
+        width: 100px;
+        height: 108px;
+      }
+    }
+  }
+  .discover {
+    &__right {
+      &__title {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      &__text {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  .features {
+    &__left {
+      &__title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+      }
+      p{
+        margin-top: 0;
+      }
+    }
+    &__right {
+      flex-direction: column;
+    }
+    &__card {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 330px) {
+  .home {
+    &__left {
+      padding-top: 0;
+      padding-right: 20px;
+      h1 {
+        font-size: 30px;
+        line-height: 34px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
   }
 }
