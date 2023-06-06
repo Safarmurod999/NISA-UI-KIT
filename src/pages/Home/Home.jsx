@@ -10,11 +10,13 @@ import freedom from "../../assets/Home/freedom.png";
 import message from "../../assets/Home/message-btn.svg";
 import layer from "../../assets/Home/layer-btn.svg";
 import play from "../../assets/Home/play-btn.svg";
-import designers from "../../assets/Home/designers.png"
+import designers from "../../assets/Home/designers.png";
 import Pinkbtn from "../../components/PinkBtn/PinkBtn";
 import partners from "../../assets/Home/partners-bg.png";
 import discover_tablet from "../../assets/Home/discover-tablet.png";
-function Home({data}) {
+import freedom_tablet from "../../assets/Home/freedom-tablet.png";
+import CustomersCarousel from "../../components/CustomersCarousel/CustomersCarousel";
+function Home({ data }) {
   return (
     <>
       <section className="home">
@@ -26,25 +28,29 @@ function Home({data}) {
               Nisa is constantly improving to move forward through dashboard,
               statistics, data and verify and superior human resources.
             </p>
-         
-            <Pinkbtn data={"Get Started"} src={arrowright}/>
+
+            <Pinkbtn data={"Get Started"} src={arrowright} />
           </div>
           <div className="home__right">
             <img src={homeright} alt="homeright" />
           </div>
         </div>
-      </section>  
+      </section>
       <section className="discover">
         <div className="container container-flex">
           <div className="discover__left">
             <img src={discover} alt="discover" />
-            <img src={discover_tablet} alt="discover" className="discover__left__tablet" />
+            <img
+              src={discover_tablet}
+              alt="discover"
+              className="discover__left__tablet"
+            />
           </div>
           <div className="discover__right">
-            <div className="discover__right__title">
+            <div className="discover__right__title title">
               Discover the power of creative freedom with Nisa.
             </div>
-            <p className="discover__right__text">
+            <p className="discover__right__text text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               tincidunt finibus tortor. Donec lobortis augue sed ante molestie,
               vitae maximus nunc semper.
@@ -64,10 +70,10 @@ function Home({data}) {
       <section className="features">
         <div className="container container-flex">
           <div className="features__left">
-            <div className="features__left__title">
+            <div className="features__left__title title">
               Share the features that help your customers
             </div>
-            <p>
+            <p className="features__left__text text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
               consectetur egestas mauris adipiscing dui. Cursus facilisis diam
               turpis leo netus consequat phasellus. Netus ipsum sed faucibus
@@ -99,16 +105,21 @@ function Home({data}) {
           </div>
         </div>
       </section>
-      {/* <section className="freedom">
-        <div className="container">
+      <section className="freedom">
+        <div className="container container-flex">
           <div className="freedom__left">
             <img src={freedom} alt="freedom" />
+            <img
+              src={freedom_tablet}
+              alt="freedom"
+              className="freedom__tablet"
+            />
           </div>
           <div className="freedom__right">
-            <div className="freedom__right__title">
+            <div className="freedom__right__title title">
               Discover the power of creative freedom with Nisa.
             </div>
-            <p>
+            <p className="freedom__right__text text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
               consectetur egestas mauris adipiscing dui.{" "}
             </p>
@@ -132,14 +143,14 @@ function Home({data}) {
       <section className="designers">
         <div className="container">
           <div className="designers__left">
-            <div className="designers__left__title">
+            <div className="designers__left__title title">
               Discover the power of creative freedom with Nisa.
             </div>
-            <p>
+            <p className="designers__left__text text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
               consectetur egestas mauris adipiscing dui.{" "}
             </p>
-            <Bluebtn data={"Explore Section"}/>
+            <Bluebtn data={"Explore Section"} />
           </div>
           <div className="designers__right">
             <img src={designers} alt="designers" />
@@ -149,22 +160,21 @@ function Home({data}) {
       <section className="partners">
         <div className="container">
           <div className="partners__title">
-          Put the spotlight on the main features
+            Put the spotlight on the main features
           </div>
           <div className="partners__img">
             <img src={partners} alt="partners" />
           </div>
           <div className="partners__list">
-            {
-              data.map((el)=>{
-                return (
-                  <img key={el.id} src={el.img} alt="asdad" />
-                )
-              })
-            }
+            {data.map((el) => {
+              return <img key={el.id} src={el.img} alt="asdad" />;
+            })}
           </div>
         </div>
-      </section> */}
+      </section>
+      <section className="customers">
+        <CustomersCarousel />
+      </section>
     </>
   );
 }
