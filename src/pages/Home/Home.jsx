@@ -16,6 +16,7 @@ import partners from "../../assets/Home/partners-bg.png";
 import discover_tablet from "../../assets/Home/discover-tablet.png";
 import freedom_tablet from "../../assets/Home/freedom-tablet.png";
 import CustomersCarousel from "../../components/CustomersCarousel/CustomersCarousel";
+import ContactUs from "../../components/ContactUs/ContactUs";
 function Home({ data }) {
   return (
     <>
@@ -173,7 +174,15 @@ function Home({ data }) {
         </div>
       </section>
       <section className="customers">
+        <div className="container">
+          <div className="title customers__title">
+          Customers love the ease and simplicity
+          </div>
+        </div>
         <CustomersCarousel />
+      </section>
+      <section className="contact">
+        <ContactUs/>
       </section>
     </>
   );
