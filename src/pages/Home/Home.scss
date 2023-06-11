@@ -377,6 +377,9 @@
 .contact{
   padding: 110px 0 ;
 }
+.article{
+  padding-bottom: 96px;
+}
 @media screen and (max-width: 1024px) {
   .home {
     padding-top: 100px;
@@ -540,6 +543,9 @@
   .contact{
     padding: 70px 0;
   }
+  .article{
+    padding-bottom: 70px;
+  }
 }
 @media screen and (max-width: 678px) {
   .title,
@@ -581,6 +587,9 @@
   }
   .contact{
     padding: 40px 0;
+  }
+  .article{
+    padding-bottom: 40px;
   }
 }
 @media screen and (max-width: 450px) {

@@ -46,21 +46,55 @@
     gap: 25px;
     max-width: 100%;
     input {
+      position: relative;
       width: 100%;
       padding: 16px 20px;
+      padding-left: 50px;
       border: 2px solid #e1e1e1;
       background-color: transparent;
       border-radius: 50px;
+      font-size: 18px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+
+      color: #e1e1e1;
     }
     button {
       width: 131px;
       padding: 12px 40px;
       background-color: #ff3c78;
+      border: 1px solid #ff3c78;
       border-radius: 16px;
       font-weight: 500;
+      cursor: pointer;
       font-size: 16px;
       line-height: 24px;
       color: #ffffff;
+      transition: .3s;
+      &:hover {
+        background-color: #ffffff;
+        color: #ff3c78;
+      }
+    }
+  }
+  &-name,
+  &-email {
+    position: relative;
+    &::after {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &-name {
+    &::after {
+      content: url("../../assets/Home/user-form.svg");
+    }
+  }
+  &-email {
+    &::after {
+      content: url("../../assets/Home/mail-form.svg");
     }
   }
 }
@@ -105,8 +139,8 @@
     &-left {
       margin-bottom: 20px;
     }
-    &-right{
-        padding-left: 0;
+    &-right {
+      padding-left: 0;
     }
     button {
       margin: 0 auto;

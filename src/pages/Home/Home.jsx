@@ -17,6 +17,8 @@ import discover_tablet from "../../assets/Home/discover-tablet.png";
 import freedom_tablet from "../../assets/Home/freedom-tablet.png";
 import CustomersCarousel from "../../components/CustomersCarousel/CustomersCarousel";
 import ContactUs from "../../components/ContactUs/ContactUs";
+import ArticleSection from "../../components/ArticleSection/ArticleSection";
+import Footer from "../../components/Footer/Footer";
 function Home({ data }) {
   return (
     <>
@@ -184,6 +186,10 @@ function Home({ data }) {
       <section className="contact">
         <ContactUs/>
       </section>
+      <section className="article">
+        <ArticleSection/>
+      </section>
+      <Footer/>
     </>
   );
 }
