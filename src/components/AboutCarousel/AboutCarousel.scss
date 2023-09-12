@@ -1,0 +1,94 @@
+@mixin flex-box($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+.about-carousel {
+  &-item {
+    padding: 86px 24px 26px;
+    min-height: 386px;
+    @include flex-box(column, center, center);
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0px 0px 11px 0px rgba(108, 109, 112, 0.2);
+    overflow: hidden;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 234px;
+      height: 234px;
+      border-radius: 50%;
+      background-color: #ff3c78;
+      top: -117px;
+      left: -117px;
+    }
+    .quote {
+      position: absolute;
+      top: 25px;
+      left: 18px;
+      z-index: 3;
+    }
+    h5 {
+      color: #172327;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+      margin-bottom: 22px;
+      margin-top: 0;
+    }
+    p {
+      color: #172327;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 22px;
+      margin-top: 0;
+    }
+    h6 {
+      color: #172327;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px;
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+    div {
+      color: #172327;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+  .swiper {
+    padding: 15px 0;
+    position: static;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: auto !important;
+    bottom: 128px;
+    background: #f9f5f2;
+    padding: 18px 22px;
+    border-radius: 50%;
+    &::after {
+      font-size: 14px;
+      color: #1e1e1e;
+    }
+  }
+  .swiper-button-next {
+    right: 50%;
+    transform: translateX(150%);
+  }
+  .swiper-button-prev {
+    left: 50%;
+    transform: translateX(-100%);
+  }
+}

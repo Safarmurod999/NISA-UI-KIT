@@ -1,3 +1,21 @@
+@mixin flex-box($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 16px;
+}
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
 .about {
   padding-top: 142px;
   padding-bottom: 80px;
@@ -8,11 +26,18 @@
     margin-bottom: 90px;
     color: #172327;
     text-align: center;
-    font-family: Roboto;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    @media screen and (max-width: 834px) {
+      font-size: 32px;
+      line-height: 44px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
   &__roles {
     width: 100%;
@@ -29,9 +54,15 @@
     justify-content: space-between;
     width: 100%;
     padding-top: 80px;
-
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 32px;
+    }
     &--item {
       text-align: center;
+      @media screen and (max-width: 1024px) {
+      }
       h4 {
         color: #1e1e1e;
         text-align: center;
@@ -41,6 +72,14 @@
         font-weight: 700;
         line-height: 86px;
         margin: 0;
+        @media screen and (max-width: 1024px) {
+          font-size: 48px;
+          line-height: 64px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 32px;
+          line-height: 44px;
+        }
       }
       p {
         color: #172327;
@@ -49,10 +88,33 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px; /* 150% */
+        line-height: 24px;
         text-transform: uppercase;
         margin: 0;
       }
+    }
+  }
+}
+.clients {
+  padding: 96px 0;
+  padding-bottom: 216px;
+  position: relative;
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(#1e1e1e);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    @media screen and (max-width: 834px) {
+      font-size: 32px;
+      line-height: 44px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 24px;
+      line-height: 32px;
     }
   }
 }
