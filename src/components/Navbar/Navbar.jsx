@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import logo from "../../assets/Navbar/logo.svg";
 
-import "./navBar.scss";
+import "./Navbar.scss";
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
