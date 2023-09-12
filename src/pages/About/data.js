@@ -1,0 +1,22 @@
+export const roleArray=[
+    {
+        id:1,
+        img:"/About/about-1.png",
+    },
+    {
+        id:2,
+        img:"/About/about-2.png",
+    },
+    {
+        id:3,
+        img:"/About/about-3.png",
+    },
+    {
+        id:4,
+        img:"/About/about-4.png",
+    },
+    {
+        id:5,
+        img:"/About/about-5.png",
+    }
+]
