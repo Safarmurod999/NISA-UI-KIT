@@ -1,8 +1,10 @@
 import React from "react";
 import TopBtn from "../../components/TopBtn/TopBtn";
-import { roleArray } from "./data";
+import { roleArray, skillsArray } from "./data";
 import "./About.scss";
 import AboutCarousel from "../../components/AboutCarousel/AboutCarousel";
+import RoleCard from "../../components/RoleCard/RoleCard";
+import {ArticleSection} from "../../components/index";
 function About() {
   return (
     <>
@@ -41,6 +43,22 @@ function About() {
         <TopBtn style={"gray"} text={"TESTIMONIAL"} />
         <div className="clients__title">What our client says</div>
         <AboutCarousel />
+      </section>
+      <section className="skills">
+        <div className="container">
+          <TopBtn style={"blue"} text={"Our team"} />
+          <div className="skills__title">
+            People with all the skills you need are in Nisa!
+          </div>
+          <div className="skills__wrapper">
+            {skillsArray.map((skills) => (
+              <RoleCard key={skills.id} {...skills} />
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="article">
+        <ArticleSection />
       </section>
     </>
   );

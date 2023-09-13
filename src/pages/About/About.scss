@@ -118,3 +118,40 @@
     }
   }
 }
+.skills {
+  padding: 96px 0;
+  position: relative;
+  background-color: #1e1e1e;
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 610px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 90px;
+    @media screen and (max-width: 834px) {
+      font-size: 32px;
+      line-height: 44px;
+      margin-bottom: 70px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 60px;
+    }
+  }
+  * {
+    color: #ffffff;
+  }
+  &__wrapper {
+    @include flex-box(row, space-between, stretch);
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.article{
+  padding-top: 96px;
+}
