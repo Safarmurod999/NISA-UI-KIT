@@ -16,6 +16,7 @@ export const userArray = [
     id: 3,
     src: "/About/user-3.svg",
     name: "Cofounder",
+    job: "Cofounder",
   },
   {
     id: 4,
