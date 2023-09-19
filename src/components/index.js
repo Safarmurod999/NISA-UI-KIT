@@ -10,3 +10,4 @@ export {default as ArticleCard} from "./ArticleSection/ArticleCard";
 export {default as TopBtn} from "./TopBtn/TopBtn";
 export {default as ContactInput} from "./ContactInput/ContactInput";
 export {default as AboutCarousel} from "./AboutCarousel/AboutCarousel";
+export {default as Accordion} from "./Accordion/Accordion";

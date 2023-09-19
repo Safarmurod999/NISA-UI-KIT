@@ -1,0 +1,68 @@
+.faq {
+  &__question {
+    width: 100%;
+    border-radius: 16px;
+    background: #f9f5f2;
+    padding: 55px 48px;
+    margin-bottom: 40px;
+    @media screen and (max-width: 834px) {
+      padding: 32px 24px;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 24px 12px;
+    }
+  }
+
+  &__question-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    cursor: pointer;
+    background-color: transparent;
+    color: #1e1e1e;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+      line-height: 40px;
+    }
+    &::after {
+      content: url(../../assets/Pricing/arrow-down.svg);
+      margin-right: 17px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__desc {
+    margin-left: -40px;
+    padding-right: 17px;
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    height: 0;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.faq__desc.show-description {
+  height: auto;
+  margin-bottom: 0;
+}
+
+.faq__question-button::after {
+  transition: transform 300ms ease-out;
+}
+
+.font-weight-bold::after {
+  transform: rotate(630deg);
+}
