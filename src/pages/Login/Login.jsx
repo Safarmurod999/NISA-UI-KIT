@@ -57,8 +57,8 @@ function Login() {
               value={data.password}
               onChange={handleChange}
             />
-            <Link to={"/reset"} className="login__link">
-              Forgot Password?
+            <Link to={"/register"} className="login__link">
+              Don't have an account? Register
             </Link>
             <button type="submit" className="login__submit">
               Login

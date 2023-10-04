@@ -7,6 +7,7 @@ import NotFound from "./pages/404/404";
 import AboutPage from "./components/AboutPage/AboutPage";
 import Pricing from "./pages/Pricing/Pricing.jsx";
 import Blog from "./pages/Blog/Blog";
+import Register from "./pages/Register/Register";
 function App() {
   return (
     <BrowserRouter>
@@ -14,11 +15,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home data={logoArray} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path={'/pricing'} element={<Pricing/>}/>
-          <Route path={'/blog'} element={<Blog />}/>
+          <Route path={'/pricing'} element={<Pricing />} />
+          <Route path={'/blog'} element={<Blog />} />
           <Route path="/:name" element={<AboutPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
