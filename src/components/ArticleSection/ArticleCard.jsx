@@ -1,6 +1,6 @@
 import React from "react";
 
-function ArticleCard({ img, color, date, text }) {
+function ArticleCard({ img, color, date, text, duration }) {
   return (
     <li className="article-section-card">
       <div className="article-section-card-img">
@@ -14,7 +14,7 @@ function ArticleCard({ img, color, date, text }) {
       </div>
 
       <div className="article-section-card-content">
-        <p>{date}</p>
+        <p>{date} | {duration}</p>
         <h6>{text}</h6>
       </div>
     </li>

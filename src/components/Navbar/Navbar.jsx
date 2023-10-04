@@ -12,7 +12,7 @@ function Navbar() {
           <div className="navbar__logo">
             <Link to={'/'}><img src={logo} alt="logo" /></Link>
           </div>
-          <div className={`navbar__navigation ${navbar&&'active'}`}>
+          <div className={`navbar__navigation ${navbar && 'active'}`}>
             <ul className="navbar__menus">
               <li>
                 <Link to="/">Home</Link>
@@ -34,7 +34,7 @@ function Navbar() {
               <Link to={'/login'}>
                 <button className="loginBtn">Login</button>
               </Link>
-              <Link>
+              <Link to={'/pricing'}>
                 <button className="pinkBtn">
                   Buy Nisa
                 </button>
@@ -55,7 +55,7 @@ function Navbar() {
               </svg>
             </button>
           </div>
-          <button id="close" className="navbar__toggle"  onClick={() => setNavbar(true)}>
+          <button id="close" className="navbar__toggle" onClick={() => setNavbar(true)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
